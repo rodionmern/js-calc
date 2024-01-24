@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Main data-->
+		<title>George</title>
+
+		<!-- Scripts -->
+		<script src="./src/solve.js"></script>
+		<script src="./src/foot.js"></script>
+		
+		<!-- Styles -->
+		<link rel="stylesheet" href="./src/styles/styles.css">
+
+	</head>
+	<body>
+		<!-- Header body -->
+		<!-- <header>
+			<img src="./src/img/logotype.png">
+			<h1>George</h1>
+		</header> -->
+
+		<!-- Main body -->
+		<div class="main">
+			<div class="calculator">
+				<div class="calculator__display">
+					<p id="calculator__display-display">CALCULATOR</p>
+				</div>
+				<div class="calculator__numbers">
+					<div class="calculator__numbers--div">
+						<p class="calculator__numbers-button" id="calculator__numbers-turn_on"> </p>	
+						<p class="calculator__numbers-button" id="calculator__numbers-left_bracket"> </p>
+						<p class="calculator__numbers-button" id="calculator__numbers-right_bracket"> </p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-clear"
+							onclick="clearNumbers()">C</p>
+					</div>
+					<div class="calculator__numbers--div">
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-seven" 
+							onclick="getNumbers(inputNumberSeven, 'calculator__numbers-seven')">7</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-eight" 
+							onclick="getNumbers(inputNumberOne, 'calculator__numbers-eight')">8</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-nine" 
+							onclick="getNumbers(inputNumberOne, 'calculator__numbers-nine')">9</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-divide" 
+							onclick="getSymbols(inputSymbolDivide, 'calculator__numbers-divide')">/</p>
+					</div>
+					<div class="calculator__numbers--div">
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-four" 
+							onclick="getNumbers(inputNumberOne, 'calculator__numbers-four')">4</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-five" 
+							onclick="getNumbers(inputNumberOne, 'calculator__numbers-five')">5</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-six" 
+							onclick="getNumbers(inputNumberOne, 'calculator__numbers-six')">6</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-multiply"
+							onclick="getSymbols(inputSymbolDivide, 'calculator__numbers-multiply')">*</p>
+					</div>
+					<div class="calculator__numbers--div">
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-one" 
+							onclick="getNumbers(inputNumberOne, 'calculator__numbers-one')">1</p>
+						<p class="calculator__numbers-button"
+							id="calculator__numbers-two" 
+							onclick="getNumbers(inputNumberTwo, 'calculator__numbers-two')">2</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-three" 
+							onclick="getNumbers(inputNumberThree, 'calculator__numbers-three')">3</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-minus" 
+							onclick="getSymbols(inputSymbolDivide, 'calculator__numbers-minus')">-</p>
+					</div>
+					<div class="calculator__numbers--div">
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-zero" 
+							onclick="getNumbers(inputNumberZero, 'calculator__numbers-zero')">0</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-dot"
+							onclick="getNumbers(inputSymbolDot, 'calculator__numbers-dot')">.</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-equals"
+							onclick="Equals()">
+							=</p>
+						<p class="calculator__numbers-button" 
+							id="calculator__numbers-plus"
+							onclick="getSymbols(inputSymbolPlus, 'calculator__numbers-plus')">+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer body -->
+		<footer id="footer" onclick="Footer()">
+			<p class="footer__copyleft" id="footer__copyleft">Copyleft (c) RodionMern (Rofionenko)</p>
+			<ul class="footer__links">
+				<li><a href="https://github.com/rodionmern/rodionmern.github.io/">web-site</a></li>
+				<li><a href="https://github.com/rodionmern/gnush/">gnush</a></li>
+				<li><a href="https://github.com/rodionmern/old-js-calculator/">old-js-calculator</a></li>
+			</ul>
+		</footer>
+
+	</body>
+</html>
